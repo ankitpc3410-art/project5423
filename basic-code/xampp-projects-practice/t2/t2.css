@@ -1,0 +1,274 @@
+/* ================================
+   DASHBOARD GENERAL STYLING
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #7aaaea;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   WELCOME SECTION
+================================ */
+
+#welcome-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 20px;
+    padding: 30px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.20);
+}
+
+#welcome-section h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+#welcome-section p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+/* ================================
+   LOGOUT
+================================ */
+
+#logout-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    text-align: right;
+}
+
+#logout-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#logout-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(239, 68, 68, 0.25);
+}
+
+
+/* ================================
+   PAGE TITLE
+================================ */
+
+#page-title {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-size: 26px;
+    color: #111827;
+}
+
+
+/* ================================
+   SEARCH BOX
+================================ */
+
+#search-form {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+#search-input {
+    width: 70%;
+    max-width: 500px;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#search-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+#search-btn {
+    padding: 12px 22px;
+    margin-left: 8px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#search-btn:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   USER TABLE
+================================ */
+
+#user-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+#user-table th {
+    background: #4f46e5;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#user-table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+#user-table tr:last-child td {
+    border-bottom: none;
+}
+
+#user-table tr:hover {
+    background: #f8faff;
+}
+
+
+/* ================================
+   TABLE ACTION BUTTONS
+================================ */
+
+.edit-btn {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.edit-btn:hover {
+    text-decoration: underline;
+}
+
+.delete-btn {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    #welcome-section {
+        width: 94%;
+        padding: 22px;
+    }
+
+    #welcome-section h2 {
+        font-size: 22px;
+    }
+
+    #logout-container {
+        width: 94%;
+    }
+
+    #page-title {
+        width: 94%;
+        font-size: 22px;
+    }
+
+    #search-form {
+        width: 94%;
+    }
+
+    #search-input {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    #search-btn {
+        margin-left: 0;
+    }
+
+    #user-table {
+        width: 94%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #user-table th,
+    #user-table td {
+        padding: 12px;
+    }
+}
+.dashboard-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-user-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.add-user-btn:hover {
+    background-color: #0b5ed7;
+    color: white;
+}

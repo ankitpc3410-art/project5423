@@ -1,0 +1,28 @@
+
+body{
+    background-image: url(../assets/images/background-image.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+.job-card {
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}

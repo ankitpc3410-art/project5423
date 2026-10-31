@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function result(){
+            let marks = document.getElementById("num").value;
+            if(marks>=50){
+                document.getElementById("result").innerHTML="pass";
+                document.getElementById("result").style.color="green";
+            }
+            else{
+                document.getElementById("result").innerHTML="Fail";
+                document.getElementById("result").style.color="Red";
+            }
+        }
+        function reset(){
+            document.getElementById("num").value=" ";
+            document.getElementById("result").innerHTML=" ";
+
+        }
+    </script>
+</head>
+<body>
+
+    
+    Enter Marks : <input type="text" id="num"
+    placeholder="Enter your marks">
+    <br><br>
+    <p id="result"></p>
+    <br><br>
+    <button onclick="result()">
+        result
+    </button>
+    <button onclick="reset()">Reset</button>
+</body>
+</html>

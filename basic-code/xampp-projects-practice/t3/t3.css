@@ -1,0 +1,343 @@
+/* =========================================
+   GLOBAL STYLING
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+/* =========================================
+   MAIN HEADING
+   ========================================= */
+
+h1 {
+    text-align: center;
+    margin: 0 0 30px;
+    padding: 20px;
+    color: #ffffff;
+    background: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+   Targets your existing:
+   <p style='color:green'>
+   ========================================= */
+
+p[style*="color:green"] {
+    width: fit-content;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background: #d4edda;
+    color: #155724 !important;
+    border: 1px solid #b7dfbf;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   SEARCH FORM
+   ========================================= */
+
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   SEARCH INPUT
+   ========================================= */
+
+input[type="text"] {
+    width: 350px;
+    height: 42px;
+    padding: 0 14px;
+    font-size: 15px;
+    border: 1px solid #ccd3da;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+
+/* =========================================
+   SEARCH BUTTON
+   ========================================= */
+
+button[type="submit"] {
+    height: 42px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #217dbb;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   SHOW ALL LINK
+   ========================================= */
+
+form a {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background: #2ecc71;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form a:hover {
+    background: #25a85a;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   TABLE HEADER
+   ========================================= */
+
+table tr:first-child {
+    background: #2c3e50;
+}
+
+table th {
+    padding: 15px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE DATA
+   ========================================= */
+
+table td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+/* =========================================
+   ALTERNATE ROW COLORS
+   ========================================= */
+
+table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   ROW HOVER
+   ========================================= */
+
+table tr:not(:first-child):hover {
+    background: #eaf4ff;
+    transition: background 0.2s ease;
+}
+
+
+/* =========================================
+   ID COLUMN
+   ========================================= */
+
+table td:first-child {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+/* =========================================
+   ACTION COLUMN
+   ========================================= */
+
+/* All links inside table */
+table td a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
+/* Edit link */
+table td a[href^="edit.php"] {
+    color: #2980b9;
+    background: #eaf4ff;
+}
+
+table td a[href^="edit.php"]:hover {
+    color: #ffffff;
+    background: #2980b9;
+}
+
+
+/* Delete link */
+table td a[href^="delete.php"] {
+    color: #e74c3c;
+    background: #fdecea;
+}
+
+table td a[href^="delete.php"]:hover {
+    color: #ffffff;
+    background: #e74c3c;
+}
+
+
+/* =========================================
+   TABLE RESPONSIVE WRAPPER
+   Since view.php cannot be changed,
+   make the table itself scroll horizontally.
+   ========================================= */
+
+@media (max-width: 1200px) {
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 17px;
+    }
+
+    form {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button[type="submit"],
+    form a {
+        flex: 1;
+        justify-content: center;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button[type="submit"],
+    form a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
+

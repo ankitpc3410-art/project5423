@@ -1,0 +1,234 @@
+body {
+    background-color: #f5f7fa;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+.job-card {
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Professional black and green theme overrides */
+:root {
+    --portal-black: #101512;
+    --portal-dark: #18211b;
+    --portal-green: #22c55e;
+    --portal-green-dark: #15803d;
+    --portal-muted: #66736a;
+    --portal-surface: #ffffff;
+    --portal-page: #f4f7f4;
+}
+
+body {
+    background: var(--portal-page);
+    color: #1c2720;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar.bg-primary,
+.navbar.navbar-dark {
+    background: var(--portal-black) !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #f8faf9 !important;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    transition: color .2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--portal-green) !important;
+}
+
+.btn-primary,
+.btn-success {
+    background-color: var(--portal-green-dark) !important;
+    border-color: var(--portal-green-dark) !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #166534 !important;
+    border-color: #166534 !important;
+}
+
+.btn-outline-primary {
+    color: var(--portal-green-dark) !important;
+    border-color: var(--portal-green-dark) !important;
+}
+
+.btn-outline-primary:hover {
+    background: var(--portal-green-dark) !important;
+    color: #fff !important;
+}
+
+.btn-warning,
+.btn-info {
+    color: #101512 !important;
+}
+
+.card,
+.info-card {
+    background: var(--portal-surface);
+    border: 1px solid #e3eae4;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(17, 35, 22, 0.055) !important;
+}
+
+.card h3,
+.card h4,
+.card h5,
+.info-card h4 {
+    color: var(--portal-black);
+    font-weight: 700;
+}
+
+.card:hover {
+    border-color: #b7e4c3;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #d5dfd7;
+    border-radius: 8px;
+    padding: .7rem .85rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--portal-green);
+    box-shadow: 0 0 0 .2rem rgba(34, 197, 94, .15);
+}
+
+a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+footer.bg-dark {
+    background: var(--portal-black) !important;
+    border-top: 3px solid var(--portal-green);
+}
+
+.job-portal-hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(3rem, 8vw, 6rem) 1.5rem;
+    border-radius: 22px;
+    color: #f8faf9;
+    background: radial-gradient(circle at 85% 20%, rgba(34, 197, 94, .22), transparent 32%), linear-gradient(135deg, #101512 0%, #1b2b20 100%);
+    box-shadow: 0 18px 42px rgba(16, 21, 18, .16);
+}
+
+.job-portal-hero h1 {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: -1.5px;
+}
+
+.job-portal-hero h1 span {
+    color: var(--portal-green);
+}
+
+.job-portal-hero .lead {
+    max-width: 720px;
+    color: #d5e0d8;
+    font-size: 1.12rem;
+}
+
+.hero-eyebrow,
+.section-kicker {
+    color: var(--portal-green-dark);
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-eyebrow {
+    color: #86efac;
+}
+
+.hero-trust-line {
+    color: #bdc9c0;
+    font-size: .92rem;
+}
+
+.hero-secondary-btn {
+    border-color: #93a49a;
+    color: #fff;
+}
+
+.hero-secondary-btn:hover {
+    border-color: var(--portal-green);
+    background: var(--portal-green);
+    color: #101512;
+}
+
+.section-intro h2 {
+    color: var(--portal-black);
+    letter-spacing: -.5px;
+}
+
+.page-intro {
+    color: var(--portal-muted);
+    margin-top: .35rem;
+    margin-bottom: 1.5rem;
+    max-width: 760px;
+}
+
+.info-card {
+    padding: 1.6rem;
+}
+
+.info-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 800;
+}
+
+.info-card p {
+    color: var(--portal-muted);
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .job-portal-hero {
+        border-radius: 16px;
+        padding: 3rem 1.1rem;
+    }
+
+    .job-portal-hero h1 {
+        letter-spacing: -.7px;
+    }
+}
